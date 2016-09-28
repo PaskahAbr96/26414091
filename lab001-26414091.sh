@@ -1,0 +1,5 @@
+echo "Cygwin"
+echo "Unix"
+echo "Linux"
+echo "Solaris"
+echo "AIX"
