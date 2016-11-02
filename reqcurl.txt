@@ -1,0 +1,3 @@
+ curl --request POST 'http://www.somedomain.com/'
+ curl --request DELETE 'http://www.somedomain.com/'
+ curl --request PUT 'http://www.somedomain.com/'
