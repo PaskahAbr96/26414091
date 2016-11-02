@@ -1,0 +1,2 @@
+curl --request POST 'http://www.somedomain.com/login/' \
+--data 'username=myusername&password=mypassword'
