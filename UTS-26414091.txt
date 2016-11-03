@@ -1,0 +1,34 @@
+1)
+a. curl -o API_SI.POV.GINI_DS2_en_csv_v2.zip http://api.worldbank.org/v2/en/indicator/SI.POV.GINI?downloadformat=csv
+b. unzip API_SI.POV.GINI_DS2_en_csv_v2.zip
+c. sed -n '/[^[:space:]]/p' API_SI.POV.GINI_DS2_en_csv_v2.csv | wc -l
+   cat API_SI.POV.GINI_DS2_en_csv_v2.csv | sed -e 's/,,/, ,/g' | column -s, -t | less -#5 -N -S
+d.
+#!/bin/sh
+
+awk '
+BEGIN {
+        RS=""
+        FS="\n"
+        OFS=","
+}
+{
+        max=-9999999
+        min=9999999
+        sum=0
+        for(i=1;i<=NF;++i) {
+                split($i,r,",")
+                if (r[8]>max) { max=r[8] }
+                if (r[8]<min) { min=r[8] }
+                sum+=r[8]
+        }
+        print r[1],r[3],r[4],NF,min,max,sum/NF
+}' API_SI.POV.GINI_DS2_en_csv_v2.csv
+ 
+2)
+a. menggunakan GET
+b.
+
+curl -o hai.txt https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp --insecure
+
+ 
