@@ -1,0 +1,17 @@
+24 Nov 2016
+Membuat class def stat pada pyhandler.py
+untuk menampilkan fps, dan kill score
+
+26 Nov 2016
+Membuat part "game over" pada game
+
+29 Nov 2016
+Menambahkan sound efek dan theme song game
+Mengerjakan part "game over" pada game
+
+30 Nov 2016
+Fixing error pada sound effect
+
+1 Des 2016
+Fixing error theme song
+Part "game over" masih tidak berhasil
